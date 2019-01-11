@@ -1,6 +1,6 @@
 # Sprint Challenge: User Interface and Git - Multi-Page Website
 
-This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored User Interface and Git. During this Sprint, you studied Semantic HTML, CSS Fundamentals, CSS Flexbox Module, and Git. In your challenge this week, you will demonstrate proficiency by creating a multi page website that has some missing HTML elements as well as CSS specificity problems that need to be solved.  You will also create an additional web page that will be linked to from a navigation you will build.
+This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored User Interface and Git. During this Sprint, you studied Semantic HTML, CSS Fundamentals, CSS Flexbox Module, and Git. In your challenge this week, you will demonstrate proficiency by creating a multi page website that has some missing HTML elements as well as CSS specificity problems that need to be solved. You will also create an additional web page that will be linked to from a navigation you will build.
 
 ## Instructions
 
@@ -32,17 +32,30 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. If you were to describe semantic HTML to the next cohort of students, what would you say?
+//1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
-2. Name two big differences between ```display: block;``` and ```display: inline;```.
+In a nutshell, it's HTML to help you, the next developer(s), and screen readers read your code. While <SECTION> and <DIV> may behave the same way, SECTION helps the reader understand that what comes between the tags is an organized group of code. Zero semantic HTML is like trying to read a document with a wall of text and no paragraphs.
 
-3. What are the 4 areas of the box model?
+//2. Name two big differences between `display: block;` and `display: inline;`.
 
-4. While using flexbox, what axis does the following property work on: ```align-items: center```?
+(1) Block elements will take up the entire width, allowing no other elements to the left or right.  
+ Inline elements will fit "inline" and allow other (non-block) elements on either side. (2) Block elements obey height attributes Inline elements don't need no developer telling them their height (setting their height won't do anything...)
 
-5. Explain why git is valuable to a team of developers.
+//3. What are the 4 areas of the box model?
 
-You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
+Outer to inner: Margin, Border, Padding, Content
+
+//4. While using flexbox, what axis does the following property work on: `align-items: center`?
+
+Align = cross axis
+
+//5. Explain why git is valuable to a team of developers.
+
+For all the reasons really.  
+It saves versions of the code so when something does break, you can always go back and look at the previous versions to find out when something went wrong and restore if you need to.  
+Any number of people can work on a single project, splitting off with different branches, with someone organizing what makes it to the final product.
+
+You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section _will_ prevent you from passing this challenge.
 
 ## Project Set Up
 
@@ -54,14 +67,12 @@ Follow these steps to set up and work on your project:
 - [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on this Branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
 - [ ] Add your Project Manager as a Reviewer on the Pull-request
-- [ ] PM then will count the HW as done by  merging the branch back into master.
- 
-
+- [ ] PM then will count the HW as done by merging the branch back into master.
 
 ## Minimum Viable Product
 
@@ -69,32 +80,32 @@ Your finished project must include all of the following requirements:
 
 ### Home Page
 
-[Review the provided design file for the home page](design-files/home.png).  Notice the navigation and header images are missing.
+[Review the provided design file for the home page](design-files/home.png). Notice the navigation and header images are missing.
 
-* [ ] Build the HTML and CSS to create the missing navigation and header.
-* [ ] Link the `About` navigation item to the [about.html](about.html) page
+- [ ] Build the HTML and CSS to create the missing navigation and header.
+- [ ] Link the `About` navigation item to the [about.html](about.html) page
 
-You will also notice there are 10 boxes on the home page that need background colors.  Use this list below to correctly style each box:
+You will also notice there are 10 boxes on the home page that need background colors. Use this list below to correctly style each box:
 
-* [ ] box1: `teal`
-* [ ] box2: `gold`
-* [ ] box3: `cadetblue`
-* [ ] box4: `coral`
-* [ ] box5: `crimson`
-* [ ] box6: `forestgreen`
-* [ ] box7: `darkorchid`
-* [ ] box8: `hotpink`
-* [ ] box9: `indigo`
-* [ ] box10: `dodgerblue`
+- [ ] box1: `teal`
+- [ ] box2: `gold`
+- [ ] box3: `cadetblue`
+- [ ] box4: `coral`
+- [ ] box5: `crimson`
+- [ ] box6: `forestgreen`
+- [ ] box7: `darkorchid`
+- [ ] box8: `hotpink`
+- [ ] box9: `indigo`
+- [ ] box10: `dodgerblue`
 
 ### About Page
 
 [Review the provided design file for the about page](design-files/about.png). You have been provided the HTML wrapper, footer, and page content for the about page. Create the rest of the missing HTML and CSS to match the design file.
 
-* [ ] Copy and paste your home page navigation and header into the about page
-* [ ] Update the header image with the about page image
-* [ ] Link the `Home` navigation item back to the `index.html` page.
-* [ ] Build the rest of the about page layout to match the design
+- [ ] Copy and paste your home page navigation and header into the about page
+- [ ] Update the header image with the about page image
+- [ ] Link the `Home` navigation item back to the `index.html` page.
+- [ ] Build the rest of the about page layout to match the design
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
@@ -102,7 +113,7 @@ In your solution, it is essential that you follow best practices and produce cle
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-* [ ] Build a page of your choosing from the navigation items.  Come up with content and images that fit the theme.  
-* [ ] Introduce CSS animations to your site.
-* [ ] Build a contact page and create a form with several inputs of your choosing
-* [ ] Add responsive breakpoints to your code by using media queries
+- [ ] Build a page of your choosing from the navigation items. Come up with content and images that fit the theme.
+- [ ] Introduce CSS animations to your site.
+- [ ] Build a contact page and create a form with several inputs of your choosing
+- [ ] Add responsive breakpoints to your code by using media queries
