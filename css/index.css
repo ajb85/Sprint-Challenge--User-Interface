@@ -157,8 +157,8 @@ p {
   margin: 0 auto;
 }
 
-/* Shared Content */
-
+/* Header items are flex objects to more easily align text to
+	 the logo.  This section is identical across all pages */
 header {
   display: flex;
   justify-content: space-between;
@@ -176,23 +176,56 @@ header nav a {
   font-size: 14px;
 }
 
-/* index.html content */
-/* I don't want conflicts from similar tags (ie: main) so
-	 distinct classes with page name (home, about) will help me keep them
-	 apart */
+/* Unique to sub-pages: about, products, blog, contact
+   Home has no introduction section */
+.intro {
+  border-bottom: 1px dashed black;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.intro div {
+  margin: 20px 0 0 20px;
+}
 
-main.home .top-content {
+.top-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 20px 0;
+}
+/* Only the home top-content box has a dashed border */
+.topHome {
   border-bottom: 1px dashed black;
 }
 
-.top-content .text-container {
+.top-content .text-container,
+.top-content .sub-text-container {
   width: 48%;
   padding: 0 1%;
   padding-bottom: 20px;
+}
+.top-content .sub-text-container {
+  border-bottom: 1px dashed black;
+  margin-bottom: 40px;
+}
+/* Create a slightly wider gap after each first box in a row */
+.top-content .sub-text-container:nth-child(odd) {
+  margin-right: 7px;
+}
+
+.top-content img {
+  margin-bottom: 10px;
+}
+.top-content .sub-text-container p {
+  margin-bottom: 20px;
+}
+.top-content .sub-text-container button {
+  background: transparent;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 130px;
+  height: 40px;
+  font-size: 16px;
 }
 
 .middle-content {
@@ -266,6 +299,11 @@ main.home .top-content {
 
 .bottom-content .text-container:last-child {
   padding-right: 0;
+}
+
+/* Outro is unique to sub pages */
+.outro {
+  margin: 0 0 40px 20px;
 }
 
 footer {
